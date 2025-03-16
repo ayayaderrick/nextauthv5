@@ -10,6 +10,7 @@ import { auth } from "@/auth";
 import { NextRequest, NextResponse } from "next/server";
 import { headers } from "next/headers";
 import { Session } from "next-auth";
+export const runtime = "experimental-edge";
 
 interface AuthenticatedRequest extends NextRequest {
   auth: Session | null;
