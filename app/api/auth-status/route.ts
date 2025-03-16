@@ -1,7 +1,9 @@
 import { auth } from "@/auth";
 import { NextResponse } from "next/server";
 
-export const runtime = "node";
+export const config = {
+  runtime: "nodejs",
+};
 
 export async function GET() {
   const session = await auth();
